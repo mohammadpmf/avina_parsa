@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello. My name is {{name}} {{last_name}} and I am {{age}} years old</h1>
+    <p>My favorite color is {{favorite_color}}</p>
+    {% for customer in customers %}
+        <h1>
+        {{ customer }}
+        </h1>
+    {% endfor %}
+    <hr>
+    <hr>
+    <hr>
+    <table style="border: 1px solid red; border-collapse: collapse;">
+        <tr>
+            <th style="border: 1px solid red;">Customer</th>
+            <th style="border: 1px solid red;">Customer Number</th>
+            <th style="border: 1px solid red;">Product</th>
+            <th style="border: 1px solid red;">Amount</th>
+            <th style="border: 1px solid red;">Time</th>
+        </tr>
+    {% for order in orders %}
+    <tr>
+        <td style="border: 1px solid red;">{{ order.customer|upper }}</td>
+        <td style="border: 1px solid red;">{{ order.customer.number }}</td>
+        <td style="border: 1px solid red;">{{ order.product }}</td>
+        <td style="border: 1px solid red;">{{ order.amount }}</td>
+        <td style="border: 1px solid red;">{{ order.datetime_created|date:"D d M Y"}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    
+</body>
+</html>

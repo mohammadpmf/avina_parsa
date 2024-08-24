@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}
+About us
+{% endblock title %}
+
+{% block parsa %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-9">
+            <div class="card shadow-sm my-3">
+                <div class="card-body">
+                    <p class="card-text py-3" style="text-align: justify;">
+                        {% lorem 7 p random %}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card my-4">
+                <h5 class="card-header">About</h5>
+                <div class="card-body">
+                    <p class="card-text";>Poulstar is an institute which help children learn
+                        different programming languagess. Kids and teenager learn how to
+                        code in different programming languages by games and playing.
+                    </p>
+                    <a href="#"
+                        class="btn btn-sm btn-outline-primary">
+                        More...
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock parsa %}

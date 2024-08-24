@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: skyblue;">
+    <h1>Here are our foods:</h1>
+    <ul>
+        {% for food in list_of_foods %}
+        <li>
+            {{ food }} 10$
+        </li>
+        {% endfor %}
+    </ul>
+    <p>
+    Thanks. Manager of restaurant {{ modir }}
+    </p>
+</body>
+</html>

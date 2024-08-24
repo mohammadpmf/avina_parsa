@@ -1,0 +1,15 @@
+Avina:
+animals/parrot/
+animals/butterfly/
+animals/bear/
+foods/pizza/
+foods/pasta/
+foods/macarano/
+
+Parsa:
+cars/Tesla/
+cars/Honda/
+cars/Lamborghini/
+toys/tank/
+toys/machine/
+toys/Lego/
